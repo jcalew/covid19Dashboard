@@ -1,6 +1,0 @@
----
-title: "covid-19"
-output: html_document
----
-
-## R Markdown
