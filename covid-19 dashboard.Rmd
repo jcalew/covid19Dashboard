@@ -7,13 +7,14 @@ output:
     theme: readable
 ---
 
-# page 1
+# Global
     
 ## Column {data-width=500, .tabset}
     
 ### Chart 1a
     
 ```{r}
+
 ```
 
 ### Chart 1b
@@ -28,14 +29,16 @@ output:
   
 ## Column {data-width=250}
    
-### Chart 2
+### Total Confirmed Cases
 
 ```{r}
+valueBox(sum(df$NewConfCases))
 ```   
  
-### Chart 3
+### Total Deaths
     
 ```{r}
+valueBox(sum(df$NewDeaths, na.rm=T))
 ```
 
 ### Chart 4
