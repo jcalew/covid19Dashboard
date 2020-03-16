@@ -9,7 +9,7 @@ output:
 
 # Global
     
-## Column {data-width=500, .tabset}
+## Column {data-width=700, .tabset}
     
 ### Chart 1a
     
@@ -27,7 +27,7 @@ output:
 ```{r}
 ```
   
-## Column {data-width=250}
+## Column {data-width=300}
    
 ### Total Confirmed Cases
 
@@ -42,23 +42,6 @@ valueBox(sum(df$NewDeaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
 
 ### Chart 4
-    
-```{r}
-```
-
-## Column {data-width=250}
-   
-### Chart 5
-
-```{r}
-```   
- 
-### Chart 6
-    
-```{r}
-```
-
-### Chart 7
     
 ```{r}
 ```
