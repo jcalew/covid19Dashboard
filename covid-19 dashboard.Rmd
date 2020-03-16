@@ -14,7 +14,6 @@ output:
 ### Chart 1a
     
 ```{r}
-
 ```
 
 ### Chart 1b
@@ -28,6 +27,12 @@ output:
 ```
   
 ## Column {data-width=300}
+
+### Current Date
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
    
 ### Total Confirmed Cases
 
@@ -39,30 +44,4 @@ valueBox(sum(df$NewConfCases), icon = "glyphicon-stats")
     
 ```{r}
 valueBox(sum(df$NewDeaths, na.rm=T), icon = "glyphicon-warning-sign")
-```
-
-### Chart 4
-    
-```{r}
-```
-
-# page 2
-    
-## Column {data-width=500}
-    
-### Chart 1
-    
-```{r}
-```
-   
-## Column {data-width=500}
-   
-### Chart 2
-
-```{r}
-```   
- 
-### Chart 3
-    
-```{r}
 ```
