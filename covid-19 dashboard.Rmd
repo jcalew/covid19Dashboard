@@ -32,13 +32,13 @@ output:
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(df$NewConfCases))
+valueBox(sum(df$NewConfCases), icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(df$NewDeaths, na.rm=T))
+valueBox(sum(df$NewDeaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
 
 ### Chart 4
