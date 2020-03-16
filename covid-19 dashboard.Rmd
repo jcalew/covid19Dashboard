@@ -5,3 +5,77 @@ output:
     orientation: columns
     vertical_layout: fill
 ---
+
+# page 1
+    
+## Column {data-width=500, .tabset}
+    
+### Chart 1a
+    
+```{r}
+```
+
+### Chart 1b
+    
+```{r}
+```
+
+### Chart 1c
+    
+```{r}
+```
+  
+## Column {data-width=250}
+   
+### Chart 2
+
+```{r}
+```   
+ 
+### Chart 3
+    
+```{r}
+```
+
+### Chart 4
+    
+```{r}
+```
+
+## Column {data-width=250}
+   
+### Chart 5
+
+```{r}
+```   
+ 
+### Chart 6
+    
+```{r}
+```
+
+### Chart 7
+    
+```{r}
+```
+
+# page 2
+    
+## Column {data-width=500}
+    
+### Chart 1
+    
+```{r}
+```
+   
+## Column {data-width=500}
+   
+### Chart 2
+
+```{r}
+```   
+ 
+### Chart 3
+    
+```{r}
+```
