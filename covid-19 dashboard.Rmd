@@ -11,24 +11,19 @@ output:
     
 ## Column {data-width=700, .tabset}
     
-### Chart 1a
+### Covid-19 Confirmed Cases
     
 ```{r}
 ```
 
-### Chart 1b
+### Covid-19 Deaths
     
 ```{r}
 ```
 
-### Chart 1c
-    
-```{r}
-```
-  
 ## Column {data-width=300}
 
-### Current Date
+### Last Updated
 
 ```{r}
 valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
@@ -37,11 +32,11 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(df$NewConfCases), icon = "glyphicon-stats")
+valueBox(sum(df$Cases), icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(df$NewDeaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(sum(df$Deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
