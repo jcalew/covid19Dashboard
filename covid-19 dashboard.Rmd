@@ -40,3 +40,37 @@ valueBox(sum(df$Cases), icon = "glyphicon-stats")
 ```{r}
 valueBox(sum(df$Deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
+
+# US
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$Cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$Deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
