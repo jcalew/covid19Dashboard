@@ -32,13 +32,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(df$Cases), icon = "glyphicon-stats")
+valueBox(sum(df$cases), icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(df$Deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(sum(df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
 
 # US
@@ -66,11 +66,11 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$Cases), icon = "glyphicon-stats")
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$Deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
