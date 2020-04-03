@@ -1,17 +1,23 @@
 library(httr)
-library(readxl)
 library(tidyverse)
 library(flexdashboard)
 library(DT)
-library(lubridate)
 library(tibbletime)
+library(RCurl)
 
-url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time(), "%Y-%m-%d"), ".xls", sep = "")
+# using manual url until issue is fixed
+##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
 
-GET(url1, write_disk(tf <- tempfile(fileext = ".xlsx")))
+# manually change this url to update
+url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-04-02.xlsx")
 
+# download the dataset to a local temporary file
+GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
+
+# read the Dataset sheet into “R”
 df <- read_excel(tf)
 
+# create United State dataframe
 US_df <- df %>%
- filter(GeoId == "US") %>%
-  arrange(desc(DateRep))
+ filter(geoId == "US") %>%
+  arrange(desc(dateRep))
