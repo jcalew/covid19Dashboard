@@ -74,3 +74,208 @@ valueBox(sum(US_df$cases), icon = "glyphicon-stats")
 ```{r}
 valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
+
+# Italy
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
+# Spain
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
+# Germany
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
+# China
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
+# France
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
+# Iran
+    
+## Column {data-width=700, .tabset}
+    
+### Covid-19 Confirmed Cases
+    
+```{r}
+```
+
+### Covid-19 Deaths
+    
+```{r}
+```
+
+## Column {data-width=300}
+
+### Last Updated
+
+```{r}
+valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
+```   
+   
+### Total Confirmed Cases
+
+```{r}
+valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+```   
+ 
+### Total Deaths
+    
+```{r}
+valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+```
+
