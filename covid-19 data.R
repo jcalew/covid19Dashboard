@@ -17,11 +17,6 @@ GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 # read the Dataset sheet into “R”
 df <- read_excel(tf)
 
-# create United State dataframe
-US_df <- df %>%
- filter(geoId == "US") %>%
-  arrange(desc(dateRep))
-
 # create death totals by country dataframe
 deaths_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
@@ -34,6 +29,37 @@ cases_by_country_df <- df %>%
   summarise(cases = sum(cases)) %>%
   arrange(desc(cases))
 
+# create United States dataframe
+US_df <- df %>%
+  filter(geoId == "US") %>%
+  arrange(desc(dateRep))
 
+# create Italy dataframe
+Italy_df <- df %>%
+  filter(geoId == "IT") %>%
+  arrange(desc(dateRep))
 
+# create Spain dataframe
+Spain_df <- df %>%
+  filter(geoId == "ES") %>%
+  arrange(desc(dateRep))
 
+# create Germany dataframe
+Germany_df <- df %>%
+  filter(geoId == "DE") %>%
+  arrange(desc(dateRep))
+
+# create China dataframe
+China_df <- df %>%
+  filter(geoId == "CN") %>%
+  arrange(desc(dateRep))
+
+# create France dataframe
+France_df <- df %>%
+  filter(geoId == "FR") %>%
+  arrange(desc(dateRep))
+
+# create Iran dataframe
+Iran_df <- df %>%
+  filter(geoId == "IR") %>%
+  arrange(desc(dateRep))
