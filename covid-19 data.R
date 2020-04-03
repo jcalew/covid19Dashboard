@@ -21,3 +21,19 @@ df <- read_excel(tf)
 US_df <- df %>%
  filter(geoId == "US") %>%
   arrange(desc(dateRep))
+
+# create death totals by country dataframe
+deaths_by_country_df <- df %>%
+  group_by(countriesAndTerritories) %>%
+  summarise(deaths = sum(deaths)) %>%
+  arrange(desc(deaths))
+
+# create case totals by country dataframe
+cases_by_country_df <- df %>%
+  group_by(countriesAndTerritories) %>%
+  summarise(cases = sum(cases)) %>%
+  arrange(desc(cases))
+
+
+
+
