@@ -17,17 +17,17 @@ GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 # read the Dataset sheet into “R”
 df <- read_excel(tf)
 
-# create death totals by country dataframe
-deaths_by_country_df <- df %>%
-  group_by(countriesAndTerritories) %>%
-  summarise(deaths = sum(deaths)) %>%
-  arrange(desc(deaths))
-
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
   summarise(cases = sum(cases)) %>%
   arrange(desc(cases))
+
+# create death totals by country dataframe
+deaths_by_country_df <- df %>%
+  group_by(countriesAndTerritories) %>%
+  summarise(deaths = sum(deaths)) %>%
+  arrange(desc(deaths))
 
 # create United States dataframe
 US_df <- df %>%
@@ -51,8 +51,8 @@ Italy_df <- df %>%
 Italy_total_cases <- Italy_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in Italy
+Italy_total_deaths <- Italy_df %>%
   summarise(deaths = sum(deaths))
 
 # create Spain dataframe
@@ -64,8 +64,8 @@ Spain_df <- df %>%
 Spain_total_cases <- Spain_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in Spain
+Spain_total_deaths <- Spain_df %>%
   summarise(deaths = sum(deaths))
 
 # create Germany dataframe
@@ -77,8 +77,8 @@ Germany_df <- df %>%
 Germany_total_cases <- Germany_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in Germany
+Germany_total_deaths <- Germany_df %>%
   summarise(deaths = sum(deaths))
 
 # create China dataframe
@@ -90,8 +90,8 @@ China_df <- df %>%
 China_total_cases <- China_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in China
+China_total_deaths <- China_df %>%
   summarise(deaths = sum(deaths))
 
 # create France dataframe
@@ -103,8 +103,8 @@ France_df <- df %>%
 France_total_cases <- France_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in France
+France_total_deaths <- France_df %>%
   summarise(deaths = sum(deaths))
 
 # create Iran dataframe
@@ -116,6 +116,6 @@ Iran_df <- df %>%
 Iran_total_cases <- Iran_df %>%
   summarise(cases = sum(cases))
 
-# calculate total deaths in US
-US_total_deaths <- US_df %>%
+# calculate total deaths in Iran
+Iran_total_deaths <- Iran_df %>%
   summarise(deaths = sum(deaths))
