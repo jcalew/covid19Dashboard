@@ -25,12 +25,6 @@ global_deaths_plot
 
 ## Column {data-width=300}
 
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
-   
 ### Total Confirmed Cases
 
 ```{r}
