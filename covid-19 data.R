@@ -27,7 +27,7 @@ global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)
   geom_line()
 
 # create plot showing global deaths
-global_cases_deaths <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
+global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
   geom_line()
 
 # create case totals by country dataframe
