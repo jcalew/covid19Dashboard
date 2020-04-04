@@ -52,12 +52,6 @@ valueBox(sum(deaths_by_country_df$deaths, na.rm=T), icon = "glyphicon-warning-si
 ```
 
 ## Column {data-width=300}
-
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
    
 ### Total Confirmed Cases
 
@@ -86,12 +80,6 @@ valueBox(US_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 ## Column {data-width=300}
-
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
    
 ### Total Confirmed Cases
 
@@ -121,12 +109,6 @@ valueBox(Italy_total_deaths, icon = "glyphicon-warning-sign")
 
 ## Column {data-width=300}
 
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
-   
 ### Total Confirmed Cases
 
 ```{r}
@@ -155,12 +137,6 @@ valueBox(Spain_total_deaths, icon = "glyphicon-warning-sign")
 
 ## Column {data-width=300}
 
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
-   
 ### Total Confirmed Cases
 
 ```{r}
@@ -188,12 +164,6 @@ valueBox(Germany_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 ## Column {data-width=300}
-
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
    
 ### Total Confirmed Cases
 
@@ -221,13 +191,7 @@ valueBox(China_total_deaths, icon = "glyphicon-warning-sign")
 ```{r}
 ```
 
-## Column {data-width=300}
-
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
+## Column {data-width=300} 
    
 ### Total Confirmed Cases
 
@@ -256,12 +220,6 @@ valueBox(France_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 ## Column {data-width=300}
-
-### Last Updated
-
-```{r}
-valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
-```   
    
 ### Total Confirmed Cases
 
