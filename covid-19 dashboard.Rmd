@@ -9,7 +9,7 @@ output:
 
 # Global
     
-## Column {data-width=700, .tabset}
+## Column {data-width=700, .tabset .tabset-fade}
     
 ### Covid-19 Confirmed Cases
     
