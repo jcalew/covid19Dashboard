@@ -34,32 +34,60 @@ US_df <- df %>%
   filter(geoId == "US") %>%
   arrange(desc(dateRep))
 
+# calculate total cases in US
+US_total_cases <- US_df %>%
+  summarise(cases = sum(cases))
+
 # create Italy dataframe
 Italy_df <- df %>%
   filter(geoId == "IT") %>%
   arrange(desc(dateRep))
+
+# calculate total cases in Italy
+Italy_total_cases <- Italy_df %>%
+  summarise(cases = sum(cases))
 
 # create Spain dataframe
 Spain_df <- df %>%
   filter(geoId == "ES") %>%
   arrange(desc(dateRep))
 
+# calculate total cases in Spain
+Spain_total_cases <- Spain_df %>%
+  summarise(cases = sum(cases))
+
 # create Germany dataframe
 Germany_df <- df %>%
   filter(geoId == "DE") %>%
   arrange(desc(dateRep))
+
+# calculate total cases in Germany
+Germany_total_cases <- Germany_df %>%
+  summarise(cases = sum(cases))
 
 # create China dataframe
 China_df <- df %>%
   filter(geoId == "CN") %>%
   arrange(desc(dateRep))
 
+# calculate total cases in China
+China_total_cases <- China_df %>%
+  summarise(cases = sum(cases))
+
 # create France dataframe
 France_df <- df %>%
   filter(geoId == "FR") %>%
   arrange(desc(dateRep))
 
+# calculate total cases in France
+France_total_cases <- France_df %>%
+  summarise(cases = sum(cases))
+
 # create Iran dataframe
 Iran_df <- df %>%
   filter(geoId == "IR") %>%
   arrange(desc(dateRep))
+
+# calculate total cases in Iran
+Iran_total_cases <- Iran_df %>%
+  summarise(cases = sum(cases))
