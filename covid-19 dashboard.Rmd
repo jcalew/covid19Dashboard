@@ -32,13 +32,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(df$cases), icon = "glyphicon-stats")
+valueBox(sum(cases_by_country_df$cases), icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(sum(deaths_by_country_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
 ```
 
 # US
@@ -66,13 +66,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(US_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(US_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # Italy
@@ -100,13 +100,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(Italy_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(Italy_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # Spain
@@ -134,13 +134,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(Spain_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(Spain_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # Germany
@@ -168,13 +168,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(Germany_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(Germany_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # China
@@ -202,13 +202,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(China_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(China_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # France
@@ -236,13 +236,13 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(France_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(France_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
 # Iran
@@ -270,12 +270,12 @@ valueBox(today(tzone = "Europe/London"), icon = "glyphicon-calendar")
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(sum(US_df$cases), icon = "glyphicon-stats")
+valueBox(Iran_total_cases, icon = "glyphicon-stats")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(sum(US_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(Iran_total_deaths, icon = "glyphicon-warning-sign")
 ```
 
