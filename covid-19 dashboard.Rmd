@@ -24,7 +24,7 @@ global_deaths_plot
 ```
 
 ## Column {data-width=300}
-
+   
 ### Total Confirmed Cases
 
 ```{r}
@@ -34,8 +34,15 @@ valueBox(sum(cases_by_country_df$cases), icon = "glyphicon-stats")
 ### Total Deaths
     
 ```{r}
-valueBox(sum(deaths_by_country_df$deaths, na.rm=T), icon = "glyphicon-warning-sign")
+valueBox(sum(deaths_by_country_df$deaths), icon = "glyphicon-warning-sign")
 ```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
+```
+
 
 # US
     
