@@ -17,6 +17,11 @@ GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 # read the Dataset sheet into “R”
 df <- read_excel(tf)
 
+# create df with cases and deaths by date
+cases_deaths_by_date_df <- df %>%
+  group_by(dateRep) %>%
+  summarise(cases = sum(cases),deaths = sum(deaths))
+
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
