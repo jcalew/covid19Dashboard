@@ -22,18 +22,15 @@ cases_deaths_by_date_df <- df %>%
   group_by(dateRep) %>%
   summarise(cases = sum(cases),deaths = sum(deaths))
 
-# create plot showing global cases
-global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)) +
-  geom_line()
-
-# create plot showing global deaths
-global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
-  geom_line()
-
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
   summarise(cases = sum(cases)) %>%
+  arrange(desc(cases))
+
+# create top 5 case totals by country dataframe
+cases_by_country_top5_df <- cases_by_country_df %>%
+  head(5) %>%
   arrange(desc(cases))
 
 # create death totals by country dataframe
@@ -41,6 +38,17 @@ deaths_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
   summarise(deaths = sum(deaths)) %>%
   arrange(desc(deaths))
+
+# create top 5 death totals by country dataframe
+deaths_by_country_top5_df <- deaths_by_country_df %>%
+  head(5) %>%
+  arrange(desc(deaths))
+
+# create deaths and cases by country dataframe
+deaths_cases_by_country_df <- df %>%
+  group_by(countriesAndTerritories) %>%
+  summarize(cases = sum(cases),deaths = sum(deaths)) %>%
+  arrange(desc(cases))
 
 # create United States dataframe
 US_df <- df %>%
