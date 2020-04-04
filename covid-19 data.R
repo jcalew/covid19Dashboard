@@ -5,7 +5,7 @@ library(DT)
 library(tibbletime)
 library(RCurl)
 
-# using manual url until issue is fixed
+# not using this until issue is fixed
 ##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
 
 # manually change this url to update
@@ -38,6 +38,10 @@ US_df <- df %>%
 US_total_cases <- US_df %>%
   summarise(cases = sum(cases))
 
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
+
 # create Italy dataframe
 Italy_df <- df %>%
   filter(geoId == "IT") %>%
@@ -46,6 +50,10 @@ Italy_df <- df %>%
 # calculate total cases in Italy
 Italy_total_cases <- Italy_df %>%
   summarise(cases = sum(cases))
+
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
 
 # create Spain dataframe
 Spain_df <- df %>%
@@ -56,6 +64,10 @@ Spain_df <- df %>%
 Spain_total_cases <- Spain_df %>%
   summarise(cases = sum(cases))
 
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
+
 # create Germany dataframe
 Germany_df <- df %>%
   filter(geoId == "DE") %>%
@@ -64,6 +76,10 @@ Germany_df <- df %>%
 # calculate total cases in Germany
 Germany_total_cases <- Germany_df %>%
   summarise(cases = sum(cases))
+
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
 
 # create China dataframe
 China_df <- df %>%
@@ -74,6 +90,10 @@ China_df <- df %>%
 China_total_cases <- China_df %>%
   summarise(cases = sum(cases))
 
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
+
 # create France dataframe
 France_df <- df %>%
   filter(geoId == "FR") %>%
@@ -83,6 +103,10 @@ France_df <- df %>%
 France_total_cases <- France_df %>%
   summarise(cases = sum(cases))
 
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
+
 # create Iran dataframe
 Iran_df <- df %>%
   filter(geoId == "IR") %>%
@@ -91,3 +115,7 @@ Iran_df <- df %>%
 # calculate total cases in Iran
 Iran_total_cases <- Iran_df %>%
   summarise(cases = sum(cases))
+
+# calculate total deaths in US
+US_total_deaths <- US_df %>%
+  summarise(deaths = sum(deaths))
