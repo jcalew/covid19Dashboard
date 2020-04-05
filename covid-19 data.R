@@ -4,6 +4,7 @@ library(flexdashboard)
 library(DT)
 library(tibbletime)
 library(RCurl)
+library(plotly)
 
 # not using this until issue is fixed
 ##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
@@ -29,12 +30,18 @@ global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)
   theme(plot.title = element_text(face="bold")) +
   labs(x = "Date", y = "Cases")
 
+# allows global_cases_plot to be interactive because of plotly
+ggplotly(global_cases_plot)
+
 # create plot showing global deaths
 global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
   geom_line() +
   ggtitle('Daily Covid-19 Deaths (Since 2019-12-31)') +
   theme(plot.title = element_text(face="bold")) +
   labs(x = "Date", y = "Deaths")
+
+# allows global_deaths_plot to be interactive because of plotly
+ggplotly(global_deaths_plot)
 
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
