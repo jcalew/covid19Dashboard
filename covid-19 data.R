@@ -25,10 +25,10 @@ cases_deaths_by_date_df <- df %>%
 
 # create plot showing global cases
 global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)) +
-  geom_line() +
-  geom_point(color = "black", size = .75) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
   ggtitle('Daily Covid-19 Cases (Since 2019-12-31)') +
-  theme(plot.title = element_text(face="bold")) +
+  theme_bw() +
   labs(x = "Date", y = "Cases")
 
 # allows global_cases_plot to be interactive because of plotly
@@ -36,10 +36,10 @@ ggplotly(global_cases_plot)
 
 # create plot showing global deaths
 global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
-  geom_line() +
-  geom_point(color = "black", size = .75) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
   ggtitle('Daily Covid-19 Deaths (Since 2019-12-31)') +
-  theme(plot.title = element_text(face="bold")) +
+  theme_bw() +
   labs(x = "Date", y = "Deaths")
 
 # allows global_deaths_plot to be interactive because of plotly
