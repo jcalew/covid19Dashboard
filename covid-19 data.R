@@ -80,6 +80,30 @@ US_df <- df %>%
   filter(geoId == "US") %>%
   arrange(desc(dateRep))
 
+# create plot showing US cases
+US_cases_plot <- ggplot(US_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in the US') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows global_cases_plot to be interactive because of plotly
+ggplotly(US_cases_plot)
+
+# create plot showing global deaths
+US_deaths_plot <- ggplot(US_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in the US') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows global_deaths_plot to be interactive because of plotly
+ggplotly(US_deaths_plot)
+
 # calculate total cases in US
 US_total_cases <- US_df %>%
   summarise(cases = sum(cases))
