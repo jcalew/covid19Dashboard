@@ -14,13 +14,13 @@ output:
 ### Covid-19 Cases
     
 ```{r}
-global_cases_plot
+ggplotly(global_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
-global_deaths_plot
+ggplotly(global_deaths_plot)
 ```
 
 ## Column {data-width=350}
