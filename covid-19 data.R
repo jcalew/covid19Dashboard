@@ -29,6 +29,7 @@ global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)
   geom_point(color = "#2196f3", size = .75) +
   ggtitle('Daily Covid-19 Cases') +
   theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
   labs(x = "Date", y = "Cases")
 
 # allows global_cases_plot to be interactive because of plotly
@@ -40,6 +41,7 @@ global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = death
   geom_point(color = "#2196f3", size = .75) +
   ggtitle('Daily Covid-19 Deaths') +
   theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
   labs(x = "Date", y = "Deaths")
 
 # allows global_deaths_plot to be interactive because of plotly
