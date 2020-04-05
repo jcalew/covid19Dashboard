@@ -27,7 +27,7 @@ cases_deaths_by_date_df <- df %>%
 global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)) +
   geom_line(color = "#2196f3") +
   geom_point(color = "#2196f3", size = .75) +
-  ggtitle('Daily Covid-19 Cases (Since 2019-12-31)') +
+  ggtitle('Daily Covid-19 Cases') +
   theme_bw() +
   labs(x = "Date", y = "Cases")
 
@@ -38,7 +38,7 @@ ggplotly(global_cases_plot)
 global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
   geom_line(color = "#2196f3") +
   geom_point(color = "#2196f3", size = .75) +
-  ggtitle('Daily Covid-19 Deaths (Since 2019-12-31)') +
+  ggtitle('Daily Covid-19 Deaths') +
   theme_bw() +
   labs(x = "Date", y = "Deaths")
 
