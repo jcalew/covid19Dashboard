@@ -9,7 +9,7 @@ output:
 
 # Global
     
-## Column {data-width=600, .tabset .tabset-fade}
+## Column {data-width=650, .tabset .tabset-fade}
     
 ### Covid-19 Confirmed Cases
     
@@ -23,7 +23,7 @@ global_cases_plot
 global_deaths_plot
 ```
 
-## Column {data-width=400}
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
