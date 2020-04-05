@@ -26,13 +26,15 @@ cases_deaths_by_date_df <- df %>%
 global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)) +
   geom_line() +
   ggtitle('Daily Covid-19 Cases (Since 2019-12-31)') +
-  theme(plot.title = element_text(face="bold"))
+  theme(plot.title = element_text(face="bold")) +
+  labs(x = "Date", y = "Cases")
 
 # create plot showing global deaths
 global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
   geom_line() +
   ggtitle('Daily Covid-19 Deaths (Since 2019-12-31)') +
-  theme(plot.title = element_text(face="bold"))
+  theme(plot.title = element_text(face="bold")) +
+  labs(x = "Date", y = "Deaths")
 
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
