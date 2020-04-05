@@ -22,6 +22,14 @@ cases_deaths_by_date_df <- df %>%
   group_by(dateRep) %>%
   summarise(cases = sum(cases),deaths = sum(deaths))
 
+# create plot showing global cases
+global_cases_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = cases)) +
+  geom_line()
+
+# create plot showing global deaths
+global_deaths_plot <- ggplot(cases_deaths_by_date_df, aes(x = dateRep, y = deaths)) +
+  geom_line()
+
 # create case totals by country dataframe
 cases_by_country_df <- df %>%
   group_by(countriesAndTerritories) %>%
