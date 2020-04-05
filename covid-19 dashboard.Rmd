@@ -11,7 +11,7 @@ output:
     
 ## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
 global_cases_plot
@@ -25,7 +25,7 @@ global_deaths_plot
 
 ## Column {data-width=350}
    
-### Total Confirmed Cases
+### Total Cases
 
 ```{r}
 valueBox(sum(cases_by_country_df$cases), icon = "glyphicon-stats", color = "red")
