@@ -43,33 +43,40 @@ valueBox(sum(deaths_by_country_df$deaths), icon = "glyphicon-warning-sign", colo
 datatable(deaths_cases_by_country_df)
 ```
 
-
 # US
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(US_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(US_deaths_plot)
 ```
 
-## Column {data-width=300}
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(US_total_cases, icon = "glyphicon-stats")
+valueBox(US_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(US_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(US_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # Italy
