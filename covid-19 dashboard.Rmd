@@ -81,169 +81,216 @@ datatable(deaths_cases_by_country_df)
 
 # Italy
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(Italy_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(Italy_deaths_plot)
 ```
 
-## Column {data-width=300}
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(Italy_total_cases, icon = "glyphicon-stats")
+valueBox(Italy_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(Italy_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(Italy_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # Spain
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(Spain_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(Spain_deaths_plot)
 ```
 
-## Column {data-width=300}
-
+## Column {data-width=350}
+   
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(Spain_total_cases, icon = "glyphicon-stats")
+valueBox(Spain_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(Spain_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(Spain_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # Germany
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(Germany_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(Germany_deaths_plot)
 ```
 
-## Column {data-width=300}
-
+## Column {data-width=350}
+   
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(Germany_total_cases, icon = "glyphicon-stats")
+valueBox(Germany_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(Germany_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(Germany_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # China
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(China_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(China_deaths_plot)
 ```
 
-## Column {data-width=300}
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(China_total_cases, icon = "glyphicon-stats")
+valueBox(China_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(China_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(China_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # France
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(France_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(France_deaths_plot)
 ```
 
-## Column {data-width=300} 
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(France_total_cases, icon = "glyphicon-stats")
+valueBox(France_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(France_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(France_total_deaths, icon = "glyphicon-warning-sign", color = "white")
+```
+
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
 ```
 
 # Iran
     
-## Column {data-width=700, .tabset}
+## Column {data-width=650, .tabset .tabset-fade}
     
-### Covid-19 Confirmed Cases
+### Covid-19 Cases
     
 ```{r}
+ggplotly(Iran_cases_plot)
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
+ggplotly(Iran_deaths_plot)
 ```
 
-## Column {data-width=300}
+## Column {data-width=350}
    
 ### Total Confirmed Cases
 
 ```{r}
-valueBox(Iran_total_cases, icon = "glyphicon-stats")
+valueBox(Iran_total_cases, icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(Iran_total_deaths, icon = "glyphicon-warning-sign")
+valueBox(Iran_total_deaths, icon = "glyphicon-warning-sign", color = "white")
 ```
 
+### Cases and Deaths by Country
+    
+```{r}
+datatable(deaths_cases_by_country_df)
+```
