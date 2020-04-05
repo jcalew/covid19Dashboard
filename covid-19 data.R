@@ -89,7 +89,7 @@ US_cases_plot <- ggplot(US_df, aes(x = dateRep, y = cases)) +
   theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
   labs(x = "Date", y = "Cases")
 
-# allows global_cases_plot to be interactive because of plotly
+# allows US_cases_plot to be interactive because of plotly
 ggplotly(US_cases_plot)
 
 # create plot showing global deaths
@@ -101,7 +101,7 @@ US_deaths_plot <- ggplot(US_df, aes(x = dateRep, y = deaths)) +
   theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
   labs(x = "Date", y = "Deaths")
 
-# allows global_deaths_plot to be interactive because of plotly
+# allows US_deaths_plot to be interactive because of plotly
 ggplotly(US_deaths_plot)
 
 # calculate total cases in US
@@ -117,6 +117,30 @@ Italy_df <- df %>%
   filter(geoId == "IT") %>%
   arrange(desc(dateRep))
 
+# create plot showing Italy cases
+Italy_cases_plot <- ggplot(Italy_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in Italy') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows Italy_cases_plot to be interactive because of plotly
+ggplotly(Italy_cases_plot)
+
+# create plot showing Italy deaths
+Italy_deaths_plot <- ggplot(Italy_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in Italy') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows Italy_deaths_plot to be interactive because of plotly
+ggplotly(Italy_deaths_plot)
+
 # calculate total cases in Italy
 Italy_total_cases <- Italy_df %>%
   summarise(cases = sum(cases))
@@ -129,6 +153,30 @@ Italy_total_deaths <- Italy_df %>%
 Spain_df <- df %>%
   filter(geoId == "ES") %>%
   arrange(desc(dateRep))
+
+# create plot showing Spain cases
+Spain_cases_plot <- ggplot(Spain_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in Spain') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows Spain_cases_plot to be interactive because of plotly
+ggplotly(Spain_cases_plot)
+
+# create plot showing Spain deaths
+Spain_deaths_plot <- ggplot(Spain_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in Spain') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows Spain_deaths_plot to be interactive because of plotly
+ggplotly(Spain_deaths_plot)
 
 # calculate total cases in Spain
 Spain_total_cases <- Spain_df %>%
@@ -143,6 +191,30 @@ Germany_df <- df %>%
   filter(geoId == "DE") %>%
   arrange(desc(dateRep))
 
+# create plot showing Germany cases
+Germany_cases_plot <- ggplot(Germany_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in Germany') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows Germany_cases_plot to be interactive because of plotly
+ggplotly(Germany_cases_plot)
+
+# create plot showing Germany deaths
+Germany_deaths_plot <- ggplot(Germany_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in Germany') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows Germany_deaths_plot to be interactive because of plotly
+ggplotly(Germany_deaths_plot)
+
 # calculate total cases in Germany
 Germany_total_cases <- Germany_df %>%
   summarise(cases = sum(cases))
@@ -155,6 +227,30 @@ Germany_total_deaths <- Germany_df %>%
 China_df <- df %>%
   filter(geoId == "CN") %>%
   arrange(desc(dateRep))
+
+# create plot showing China cases
+China_cases_plot <- ggplot(China_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in China') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows China_cases_plot to be interactive because of plotly
+ggplotly(China_cases_plot)
+
+# create plot showing China deaths
+China_deaths_plot <- ggplot(China_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in China') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows China_deaths_plot to be interactive because of plotly
+ggplotly(China_deaths_plot)
 
 # calculate total cases in China
 China_total_cases <- China_df %>%
@@ -169,6 +265,30 @@ France_df <- df %>%
   filter(geoId == "FR") %>%
   arrange(desc(dateRep))
 
+# create plot showing France cases
+France_cases_plot <- ggplot(France_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in France') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows France_cases_plot to be interactive because of plotly
+ggplotly(France_cases_plot)
+
+# create plot showing France deaths
+France_deaths_plot <- ggplot(France_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in France') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows France_deaths_plot to be interactive because of plotly
+ggplotly(France_deaths_plot)
+
 # calculate total cases in France
 France_total_cases <- France_df %>%
   summarise(cases = sum(cases))
@@ -181,6 +301,30 @@ France_total_deaths <- France_df %>%
 Iran_df <- df %>%
   filter(geoId == "IR") %>%
   arrange(desc(dateRep))
+
+# create plot showing Iran cases
+Iran_cases_plot <- ggplot(Iran_df, aes(x = dateRep, y = cases)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Cases in Iran') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Cases")
+
+# allows Iran_cases_plot to be interactive because of plotly
+ggplotly(Iran_cases_plot)
+
+# create plot showing Iran deaths
+Iran_deaths_plot <- ggplot(Iran_df, aes(x = dateRep, y = deaths)) +
+  geom_line(color = "#2196f3") +
+  geom_point(color = "#2196f3", size = .75) +
+  ggtitle('Daily Covid-19 Deaths in Iran') +
+  theme_bw() +
+  theme(plot.title = element_text(size = 15,color = "#666666",face="bold")) +
+  labs(x = "Date", y = "Deaths")
+
+# allows Iran_deaths_plot to be interactive because of plotly
+ggplotly(Iran_deaths_plot)
 
 # calculate total cases in Iran
 Iran_total_cases <- Iran_df %>%
