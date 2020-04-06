@@ -1,2 +1,27 @@
-# covid-19
-Latest information about covid-19 global spread
+# Covid-19 Tracker
+The Covid-19 Tracker is a simple dashboard that keeps track of Covid-19 confirmed cases, deaths, and trends using data from the European Centre for Disease Prevention and Control.
+
+## Motivation
+I wanted to get more practice working with data and building dashboards. This dashboard is something that I use to stay informed on the current pandemic.
+
+## Libraries used
+```
+library(httr)
+library(tidyverse)
+library(flexdashboard)
+library(DT)
+library(tibbletime)
+library(RCurl)
+library(plotly)
+```
+## Current Status
+Due to a couple of minor issues, the dashboard isn't live yet. I have included a screenshot below of what the home page currently looks like.
+
+## Screenshot
+![Dashboard Screenshot](/Users/cw/Desktop/Screen Shot 2020-04-06 at 1.31.00 AM 2.png)
+
+### Thanks to
+* [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
+* [ecdc](https://www.ecdc.europa.eu/en) - data source
+
+
