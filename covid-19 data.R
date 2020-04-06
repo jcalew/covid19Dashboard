@@ -5,6 +5,10 @@ library(DT)
 library(tibbletime)
 library(RCurl)
 library(plotly)
+library(png)
+
+# screenshot for ReadME
+screenshot <- readPNG("/Users/cw/Desktop/Covid-19TrackerScreenshot.png", native = FALSE, info = FALSE)
 
 # not using this until issue is fixed
 ##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
