@@ -23,5 +23,3 @@ Due to a couple of minor issues, the dashboard isn't live yet. I have included a
 ### Thanks to
 * [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
 * [ecdc](https://www.ecdc.europa.eu/en) - data source
-
-
