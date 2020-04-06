@@ -18,8 +18,7 @@ library(plotly)
 Due to a couple of minor issues, the dashboard isn't live yet. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
-
-![Dashboard Screenshot](/Users/cw/Desktop/Screen Shot 2020-04-06 at 1.31.00 AM 2.png)
+![Dashboard Screenshot](/Users/cw/Desktop/Covid-19TrackerScreenshot.png)
 
 ### Thanks to
 * [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
