@@ -5,7 +5,6 @@ library(DT)
 library(tibbletime)
 library(RCurl)
 library(plotly)
-library(readxl)
 
 # not using this until issue is fixed
 ##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
@@ -18,6 +17,10 @@ GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 
 # read the Dataset sheet into “R”
 df <- read_excel(tf)
+
+# convert to integer to use commas
+df$cases <- as.integer(df$cases)
+df$deaths <- as.integer(df$deaths)
 
 # create cases and deaths by date dataframe
 cases_deaths_by_date_df <- df %>%
