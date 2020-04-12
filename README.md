@@ -15,7 +15,7 @@ library(RCurl)
 library(plotly)
 ```
 ## Current Status
-Due to a couple of minor issues, the dashboard isn't live yet. I have included a screenshot below of what the home page currently looks like.
+The project isn't live yet. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
 ![Dashboard Screenshot](images/Covid-19TrackerScreenshot.png)
