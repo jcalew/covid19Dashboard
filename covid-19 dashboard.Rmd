@@ -14,13 +14,13 @@ output:
 ### Covid-19 Cases
     
 ```{r}
-ggplotly(global_cases_plot)
+globalCasesPlotly
 ```
 
 ### Covid-19 Deaths
     
 ```{r}
-ggplotly(global_deaths_plot)
+globalDeathsPlotly
 ```
 
 ## Column {data-width=350}
@@ -28,18 +28,18 @@ ggplotly(global_deaths_plot)
 ### Total Cases
 
 ```{r}
-valueBox(add_commas(sum(cases_by_country_df$cases)), icon = "glyphicon-stats", color = "white")
+valueBox(add_commas(sum(casesByCountryDF$cases)), icon = "glyphicon-stats", color = "white")
 ```   
  
 ### Total Deaths
     
 ```{r}
-valueBox(add_commas(sum(deaths_by_country_df$deaths)), icon = "glyphicon-warning-sign", color = "white")
+valueBox(add_commas(sum(deathsByCountryDF$deaths)), icon = "glyphicon-warning-sign", color = "white")
 ```
 
 ### Cases and Deaths by Country
     
 ```{r}
-datatable(deaths_cases_by_country_df, options = list(pageLength = 10,
+datatable(deathsCasesByCountryDF, options = list(pageLength = 10,
                                                      info = FALSE))
 ```
