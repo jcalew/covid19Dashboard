@@ -13,12 +13,14 @@ library(DT)
 library(tibbletime)
 library(RCurl)
 library(plotly)
+library(readxl)
+library(broman)
 ```
 ## Current Status
 The project isn't live yet. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
-![Dashboard Screenshot](images/Covid-19TrackerScreenshot.png)
+![Dashboard Screenshot](images/Covid-19TrackerScreenshot2.png)
 
 ### Thanks to
 * [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
