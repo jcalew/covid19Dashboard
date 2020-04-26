@@ -1,5 +1,5 @@
 ---
-title: "Covid-19 Tracker"
+title: "Covid-19 Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
