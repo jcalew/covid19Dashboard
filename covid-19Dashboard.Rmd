@@ -5,6 +5,7 @@ output:
     orientation: columns
     vertical_layout: fill
     theme: paper
+    runtime: shiny
 ---
 
 # Global
