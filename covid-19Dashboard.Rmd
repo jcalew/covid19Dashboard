@@ -8,6 +8,10 @@ output:
     runtime: shiny
 ---
 
+```{r, echo=FALSE}
+shinyApp()
+```
+
 # Global
     
 ## Column {data-width=650, .tabset .tabset-fade}
