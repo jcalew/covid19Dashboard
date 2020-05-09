@@ -7,6 +7,7 @@ library(RCurl)
 library(plotly)
 library(readxl)
 library(broman)
+library(shiny)
 
 # updates date for data
 url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
