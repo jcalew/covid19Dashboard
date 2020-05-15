@@ -2,7 +2,7 @@
 The Covid-19 Dashboard is a simple dashboard that keeps track of Covid-19 confirmed cases, deaths, and trends using data from the European Centre for Disease Prevention and Control.
 
 ## Motivation
-I wanted to get more practice working with data and building dashboards. This is something that I use to stay informed on the current pandemic.
+I wanted to get more practice working with data and building dashboards. This is something that I use to stay informed.
 
 ## Libraries used
 ```
@@ -17,7 +17,7 @@ library(readxl)
 library(broman)
 ```
 ## Current Status
-The project isn't live yet. I have included a screenshot below of what the home page currently looks like.
+The project isn't live. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
 ![Dashboard Screenshot](images/Covid-19TrackerScreenshot4.png)
