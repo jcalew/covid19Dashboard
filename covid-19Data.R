@@ -9,12 +9,20 @@ library(readxl)
 library(broman)
 library(shiny)
 
-# updates date for data
-url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time() - 12, "%Y-%m-%d"), ".xlsx", sep = "")
+# updates url for today's data which might not exist yet
+url1 <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.Date(), "%Y-%m-%d"), ".xlsx", sep = "")
 
-# manual method
-##url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-04-26.xlsx")
+# updates url for yesterday's data
+url2 <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.Date()-1, "%Y-%m-%d"), ".xlsx", sep = "")
 
+# checks if today's data has been updated
+if (url.exists(url1)) {
+  url <- url1
+} else {
+  #uses yesterday's data
+  url <- url2
+}
+  
 # download the dataset to a local temporary file
 GET(url, write_disk(tf <- tempfile(fileext = ".xlsx")))
 
