@@ -7,7 +7,6 @@ library(RCurl)
 library(plotly)
 library(readxl)
 library(broman)
-library(shiny)
 
 # updates url for today's data which might not exist yet
 url1 <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.Date(), "%Y-%m-%d"), ".xlsx", sep = "")
