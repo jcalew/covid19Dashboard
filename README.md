@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # Covid-19 Dashboard
 The Covid-19 Dashboard is a simple dashboard that keeps track of Covid-19 confirmed cases, deaths, and trends using data from the European Centre for Disease Prevention and Control.
 
@@ -20,7 +25,7 @@ library(broman)
 The project isn't live. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
-![Dashboard Screenshot](images/Covid-19TrackerScreenshot7.png)
+![](images/Covid-19TrackerScreenshot8.png)
 
 ### Thanks to
 * [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
