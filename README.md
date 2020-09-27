@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 # Covid-19 Dashboard
 The Covid-19 Dashboard is a simple dashboard that keeps track of Covid-19 confirmed cases, deaths, and trends using data from the European Centre for Disease Prevention and Control.
 
