@@ -20,7 +20,7 @@ library(broman)
 The project isn't live. I have included a screenshot below of what the home page currently looks like.
 
 ## Screenshot
-![](images/Covid19TrackerScreenshot8.png)
+![](images/Covid19TrackerScreenshot9.png)
 
 ### Thanks to
 * [flexdashboard](https://github.com/rstudio/flexdashboard) - built using flexdashboard
