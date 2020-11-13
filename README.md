@@ -19,7 +19,7 @@ library(broman)
 ## Current Status
 The project isn't live. I have included a screenshot below of what the home page currently looks like.
 
-## Screenshot
+## Screenshot as of 11/12/20
 ![](images/Covid19TrackerScreenshot9.png)
 
 ### Thanks to
